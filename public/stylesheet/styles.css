@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  /* height: 100vh; */
+  height: fit-content;
+  background-color: #303232;
+  color: white;
+  padding: 1rem;
+}
+.container a {
+  text-decoration: none;
+  padding: 1rem 0;
+  color: white;
+}
+.container h2 {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+.container form {
+  display: flex;
+  gap: 2rem;
+}
+.container form input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+.container form button {
+  padding: 10px 50px;
+  border-radius: 10px;
+  background-color: rgb(14, 99, 227);
+  color: white;
+  cursor: pointer;
+  border: none;
+} /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update</title>
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: #303232;
+        color: white;
+        padding: 1rem;
+      }
+      .container a {
+        text-decoration: none;
+        padding: 1rem 0;
+        color: white;
+      }
+      .container h2 {
+        font-size: 2rem;
+        padding: 15px 0;
+      }
+      .container form {
+        display: flex;
+        gap: 2rem;
+      }
+      .container form input {
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: none;
+      }
+      .container form button {
+        padding: 10px 50px;
+        border-radius: 10px;
+        background-color: rgb(14, 99, 227);
+        color: white;
+        cursor: pointer;
+        border: none;
+      } /*# sourceMappingURL=styles.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/users">Go to user page</a>
+      <h2>Update user</h2>
+      <form action="/edit/<%= user._id %>" method="post">
+        <input
+          type="text"
+          name="user"
+          placeholder="name"
+          required
+          value="<%= user.user %>"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="email"
+          required
+          value="<%=user.email%>"
+        />
+        <input
+          type="text"
+          name="image"
+          placeholder="image url"
+          value="<%=user.image%>"
+        />
+        <button>submit</button>
+      </form>
+    </div>
+  </body>
+</html>
